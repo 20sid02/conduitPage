@@ -1,9 +1,7 @@
 const header = document.querySelector(".site-header");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 20) {
-    header.classList.add("is-scrolled");
-  } else {
-    header.classList.remove("is-scrolled");
-  }
-});
+if (header) {
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("is-scrolled", window.scrollY > 20);
+  });
+}
