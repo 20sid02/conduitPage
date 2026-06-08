@@ -1,7 +1,1 @@
-const header = document.querySelector(".site-header");
-
-if (header) {
-  window.addEventListener("scroll", () => {
-    header.classList.toggle("is-scrolled", window.scrollY > 20);
-  });
-}
+// No JavaScript is required for the current static landing page.
