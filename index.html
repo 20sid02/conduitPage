@@ -55,251 +55,427 @@
     alt="Conduit app icon"
   />
 </div>
-        <span>Conduit</span>
+            <span>Conduit</span>
+  </a>
+
+  <nav
+    class="site-nav"
+    aria-label="Primary navigation"
+  >
+    <a href="#features">Features</a>
+    <a href="#security">Security</a>
+    <a href="#free">Free</a>
+  </nav>
+
+  <a
+    class="nav-cta"
+    href="#waitlist"
+  >
+    Join Beta
+  </a>
+</header>
+
+<main>
+  <section class="hero-section">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        Offline-first infrastructure vault
+      </p>
+
+      <h1>
+        Stop tracking client deployments in scattered notes.
+      </h1>
+
+      <p class="hero-text">
+        Conduit is a private iOS app for freelancers, solo
+        developers, and homelab users who need one clean place
+        to store clients, deployments, URLs, ports, services,
+        admin details, and sensitive credentials.
+      </p>
+
+      <a
+        class="primary-button"
+        href="#waitlist"
+      >
+        Join the TestFlight Waitlist
       </a>
 
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#features">Features</a>
-        <a href="#security">Security</a>
-        <a href="#free">Free</a>
-      </nav>
-
-      <a class="nav-cta" href="#waitlist">Join Beta</a>
-    </header>
-
-    <main>
-      <section class="hero-section">
-        <div class="hero-copy">
-          <p class="eyebrow">Offline-first infrastructure vault</p>
-
-          <h1>Stop tracking client deployments in scattered notes.</h1>
-
-          <p class="hero-text">
-            Conduit is a private iOS app for freelancers, solo developers, and homelab users
-            who need one clean place to store clients, deployments, URLs, ports, services,
-            admin details, and sensitive credentials.
-          </p>
-
-          <a class="primary-button" href="#waitlist">
-  Join the TestFlight Waitlist
-</a>
-
-          <p class="trust-note">
-            No backend. No account. No cloud dependency. Built for local-first workflows.
-          </p>
-        </div>
-
-        <div class="hero-panel" aria-label="Conduit app interface preview">
-          <div class="phone-frame">
-            <div class="phone-top">
-              <div>
-                <p class="mini-label">Client</p>
-                <h2>North Ridge Systems</h2>
-              </div>
-              <span class="status-pill"><span class="status-dot online"></span>Online</span>
-            </div>
-
-            <div class="deployment-card">
-              <div>
-                <p class="mini-label">Deployment</p>
-                <h3>Inventory Portal</h3>
-              </div>
-              <span class="port-badge">:10200</span>
-            </div>
-
-            <div class="detail-grid">
-              <div class="detail-card"><span>URL</span><strong>demo.client.app</strong></div>
-              <div class="detail-card"><span>Service</span><strong>gunicorn</strong></div>
-              <div class="detail-card"><span>Database</span><strong>postgres</strong></div>
-              <div class="detail-card"><span>Access</span><strong>admin_user</strong></div>
-            </div>
-
-            <div class="vault-card">
-              <div>
-                <p class="mini-label">Secure Vault</p>
-                <h3>Credentials locked</h3>
-              </div>
-              <button type="button" class="unlock-button">Face ID</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-block" id="features">
-        <div class="section-heading">
-          <p class="eyebrow">Built for real maintenance work</p>
-          <h2>A clean map of the infrastructure you already manage.</h2>
-          <p>
-            Conduit does not try to replace SSH, monitoring, Docker dashboards, or provider consoles.
-            It sits between them as your private structured reference.
-          </p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h3A2.5 2.5 0 0 1 12 6.5v3A2.5 2.5 0 0 1 9.5 12h-3A2.5 2.5 0 0 1 4 9.5v-3Z"/>
-                <path d="M14 6.5A2.5 2.5 0 0 1 16.5 4h1A2.5 2.5 0 0 1 20 6.5v1A2.5 2.5 0 0 1 17.5 10h-1A2.5 2.5 0 0 1 14 7.5v-1Z"/>
-                <path d="M14 15.5A2.5 2.5 0 0 1 16.5 13h1a2.5 2.5 0 0 1 2.5 2.5v1a2.5 2.5 0 0 1-2.5 2.5h-1a2.5 2.5 0 0 1-2.5-2.5v-1Z"/>
-                <path d="M4 16.5A2.5 2.5 0 0 1 6.5 14h3a2.5 2.5 0 0 1 2.5 2.5v1A2.5 2.5 0 0 1 9.5 20h-3A2.5 2.5 0 0 1 4 17.5v-1Z"/>
-              </svg>
-            </span>
-            <h3>Clients & deployments</h3>
-            <p>Group client systems, deployed apps, environments, and project notes in compact cards.</p>
-          </article>
-
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M5 7h9"/>
-                <path d="M17 7h2"/>
-                <path d="M5 12h4"/>
-                <path d="M12 12h7"/>
-                <path d="M5 17h11"/>
-                <path d="M19 17h.01"/>
-              </svg>
-            </span>
-            <h3>Services & ports</h3>
-            <p>Track custom service names, internal routes, local ports, reverse proxy details, and URLs.</p>
-          </article>
-
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M6 7h12"/>
-                <path d="M6 12h12"/>
-                <path d="M6 17h7"/>
-                <path d="M17 15v4"/>
-                <path d="M15 17h4"/>
-              </svg>
-            </span>
-            <h3>Custom fields</h3>
-            <p>Add text, URL, port, and password fields for stack-specific details that do not fit a template.</p>
-          </article>
-
-          <article class="feature-card">
-            <span class="feature-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24">
-                <path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"/>
-                <path d="m16.5 16.5 3.5 3.5"/>
-                <path d="M8 11h6"/>
-                <path d="M11 8v6"/>
-              </svg>
-            </span>
-            <h3>Fast lookup</h3>
-            <p>Search clients and open saved deployment URLs without digging through chats or spreadsheets.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="split-section" id="security">
-        <div class="glass-card">
-          <p class="eyebrow">Credential safety</p>
-          <h2>Sensitive data belongs behind biometric unlock.</h2>
-          <p>
-            Passwords and sensitive values are kept separate from regular deployment notes and designed
-            to be unlocked only when needed.
-          </p>
-        </div>
-
-        <div class="security-list">
-          <div class="security-row"><span></span><p>Face ID, Touch ID, or passcode-gated credential access</p></div>
-          <div class="security-row"><span></span><p>Passwords stored separately from normal app metadata</p></div>
-          <div class="security-row"><span></span><p>Local-first design with no required backend account</p></div>
-        </div>
-      </section>
-
-      <section class="section-block" id="free">
-        <div class="section-heading">
-          <p class="eyebrow">Free first</p>
-          <h2>Designed to validate usefulness before adding Pro features.</h2>
-          <p>
-            The first public version is intentionally simple: local storage, manual entries,
-            secure credential access, and enough limits to test whether people actually want this.
-          </p>
-        </div>
-
-        <div class="plan-card">
-          <div>
-            <p class="mini-label">Conduit Free</p>
-            <h3>For personal use, early testers, and small workflows.</h3>
-          </div>
-
-          <ul>
-            <li>Up to 4 clients</li>
-            <li>Up to 3 deployments per client</li>
-            <li>Custom services, ports, URLs, and notes</li>
-            <li>Keychain-backed sensitive credentials</li>
-            <li>Offline iOS storage</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="final-cta" id="waitlist">
-  <div class="waitlist-copy">
-    <p class="eyebrow">Conduit beta</p>
-
-    <h2>Help shape Conduit before the Pro version exists.</h2>
-
-    <p>
-      Join the waitlist to receive TestFlight access and occasional
-      development updates. No marketing noise.
-    </p>
-  </div>
-
-  <form
-    class="waitlist-form"
-    id="waitlist-form"
-    action="https://app.loops.so/api/newsletter-form/cmq6iwczi23gw0jzh51wmcugt"
-    method="post"
-  >
-    <label class="sr-only" for="waitlist-email">Email address</label>
-
-    <div class="waitlist-input-row">
-      <input
-        id="waitlist-email"
-        name="email"
-        type="email"
-        autocomplete="email"
-        placeholder="you@example.com"
-        required
-      />
-
-      <button class="primary-button waitlist-submit" type="submit">
-        <span class="button-label">Join the waitlist</span>
-        <span class="button-loading" hidden>Joining…</span>
-      </button>
+      <p class="trust-note">
+        No backend. No account. No cloud dependency. Built for
+        local-first workflows.
+      </p>
     </div>
 
-    <input type="hidden" name="mailingLists" value="cmq6jean67koc0j07flsfc5x2" />
-    <input type="hidden" name="source" value="Conduit Landing Page" />
-<br>
-    <p class="waitlist-privacy">
-      Your email will only be used for Conduit beta access and product
-      updates.
-    </p>
-
-    <p
-      class="form-status"
-      id="waitlist-status"
-      role="status"
-      aria-live="polite"
-    ></p>
-  </form>
-</section>
-    </main>
-
-    <footer class="site-footer">
-  <p>
-    Conduit by
-    <a
-      href="https://arksoft.xyz"
-      target="_blank"
-      rel="noopener noreferrer"
+    <div
+      class="hero-panel"
+      aria-label="Conduit app interface preview"
     >
-      ArkSoft
-    </a>
+      <div class="phone-frame">
+        <div class="phone-top">
+          <div>
+            <p class="mini-label">Client</p>
+            <h2>North Ridge Systems</h2>
+          </div>
+
+          <span class="status-pill">
+            <span class="status-dot online"></span>
+            Online
+          </span>
+        </div>
+
+        <div class="deployment-card">
+          <div>
+            <p class="mini-label">Deployment</p>
+            <h3>Inventory Portal</h3>
+          </div>
+
+          <span class="port-badge">
+            :10200
+          </span>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <span>URL</span>
+            <strong>demo.client.app</strong>
+          </div>
+
+          <div class="detail-card">
+            <span>Service</span>
+            <strong>gunicorn</strong>
+          </div>
+
+          <div class="detail-card">
+            <span>Database</span>
+            <strong>postgres</strong>
+          </div>
+
+          <div class="detail-card">
+            <span>Access</span>
+            <strong>admin_user</strong>
+          </div>
+        </div>
+
+        <div class="vault-card">
+          <div>
+            <p class="mini-label">Secure Vault</p>
+            <h3>Credentials locked</h3>
+          </div>
+
+          <button
+            type="button"
+            class="unlock-button"
+          >
+            Face ID
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="section-block"
+    id="features"
+  >
+    <div class="section-heading">
+      <p class="eyebrow">
+        Built for real maintenance work
+      </p>
+
+      <h2>
+        A clean map of the infrastructure you already manage.
+      </h2>
+
+      <p>
+        Conduit does not try to replace SSH, monitoring, Docker
+        dashboards, or provider consoles. It sits between them
+        as your private structured reference.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <span
+          class="feature-icon"
+          aria-hidden="true"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M4 6.5A2.5 2.5 0 0 1 6.5 4h3A2.5 2.5 0 0 1 12 6.5v3A2.5 2.5 0 0 1 9.5 12h-3A2.5 2.5 0 0 1 4 9.5v-3Z"
+            />
+
+            <path
+              d="M14 6.5A2.5 2.5 0 0 1 16.5 4h1A2.5 2.5 0 0 1 20 6.5v1A2.5 2.5 0 0 1 17.5 10h-1A2.5 2.5 0 0 1 14 7.5v-1Z"
+            />
+
+            <path
+              d="M14 15.5A2.5 2.5 0 0 1 16.5 13h1a2.5 2.5 0 0 1 2.5 2.5v1a2.5 2.5 0 0 1-2.5 2.5h-1a2.5 2.5 0 0 1-2.5-2.5v-1Z"
+            />
+
+            <path
+              d="M4 16.5A2.5 2.5 0 0 1 6.5 14h3a2.5 2.5 0 0 1 2.5 2.5v1A2.5 2.5 0 0 1 9.5 20h-3A2.5 2.5 0 0 1 4 17.5v-1Z"
+            />
+          </svg>
+        </span>
+
+        <h3>Clients &amp; deployments</h3>
+
+        <p>
+          Group client systems, deployed apps, environments,
+          and project notes in compact cards.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <span
+          class="feature-icon"
+          aria-hidden="true"
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M5 7h9" />
+            <path d="M17 7h2" />
+            <path d="M5 12h4" />
+            <path d="M12 12h7" />
+            <path d="M5 17h11" />
+            <path d="M19 17h.01" />
+          </svg>
+        </span>
+
+        <h3>Services &amp; ports</h3>
+
+        <p>
+          Track custom service names, internal routes, local
+          ports, reverse proxy details, and URLs.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <span
+          class="feature-icon"
+          aria-hidden="true"
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M6 7h12" />
+            <path d="M6 12h12" />
+            <path d="M6 17h7" />
+            <path d="M17 15v4" />
+            <path d="M15 17h4" />
+          </svg>
+        </span>
+
+        <h3>Custom fields</h3>
+
+        <p>
+          Add text, URL, port, and password fields for
+          stack-specific details that do not fit a template.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <span
+          class="feature-icon"
+          aria-hidden="true"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Z"
+            />
+
+            <path d="m16.5 16.5 3.5 3.5" />
+            <path d="M8 11h6" />
+            <path d="M11 8v6" />
+          </svg>
+        </span>
+
+        <h3>Fast lookup</h3>
+
+        <p>
+          Search clients and open saved deployment URLs without
+          digging through chats or spreadsheets.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section
+    class="split-section"
+    id="security"
+  >
+    <div class="glass-card">
+      <p class="eyebrow">
+        Credential safety
+      </p>
+
+      <h2>
+        Sensitive data belongs behind biometric unlock.
+      </h2>
+
+      <p>
+        Passwords and sensitive values are kept separate from
+        regular deployment notes and designed to be unlocked
+        only when needed.
+      </p>
+    </div>
+
+    <div class="security-list">
+      <div class="security-row">
+        <span></span>
+
+        <p>
+          Face ID, Touch ID, or passcode-gated credential access
+        </p>
+      </div>
+
+      <div class="security-row">
+        <span></span>
+
+        <p>
+          Passwords stored separately from normal app metadata
+        </p>
+      </div>
+
+      <div class="security-row">
+        <span></span>
+
+        <p>
+          Local-first design with no required backend account
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="section-block"
+    id="free"
+  >
+    <div class="section-heading">
+      <p class="eyebrow">
+        Free first
+      </p>
+
+      <h2>
+        Designed to validate usefulness before adding Pro
+        features.
+      </h2>
+
+      <p>
+        The first public version is intentionally simple:
+        local storage, manual entries, secure credential access,
+        and enough limits to test whether people actually want
+        this.
+      </p>
+    </div>
+
+    <div class="plan-card">
+      <div>
+        <p class="mini-label">
+          Conduit Free
+        </p>
+
+        <h3>
+          For personal use, early testers, and small workflows.
+        </h3>
+      </div>
+
+      <ul>
+        <li>Up to 4 clients</li>
+        <li>Up to 3 deployments per client</li>
+        <li>Custom services, ports, URLs, and notes</li>
+        <li>Keychain-backed sensitive credentials</li>
+        <li>Offline iOS storage</li>
+      </ul>
+    </div>
+  </section>
+
+  <section
+    class="final-cta"
+    id="waitlist"
+  >
+    <div class="waitlist-copy">
+      <p class="eyebrow">
+        Conduit beta
+      </p>
+
+      <h2>
+        Help shape Conduit before the Pro version exists.
+      </h2>
+
+      <p>
+        Join the waitlist to receive TestFlight access and
+        occasional development updates. No marketing noise.
+      </p>
+    </div>
+
+    <form
+      class="waitlist-form"
+      id="waitlist-form"
+      action="https://app.loops.so/api/newsletter-form/cmq6iwczi23gw0jzh51wmcugt"
+      method="post"
+    >
+      <label
+        class="sr-only"
+        for="waitlist-email"
+      >
+        Email address
+      </label>
+
+      <div class="waitlist-input-row">
+        <input
+          id="waitlist-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          placeholder="you@example.com"
+          required
+        />
+
+        <button
+          class="primary-button waitlist-submit"
+          type="submit"
+        >
+          <span class="button-label">
+            Join the waitlist
+          </span>
+
+          <span
+            class="button-loading"
+            hidden
+          >
+            Joining…
+          </span>
+        </button>
+      </div>
+
+      <input
+        type="hidden"
+        name="mailingLists"
+        value="cmq6jean67koc0j07flsfc5x2"
+      />
+
+      <input
+        type="hidden"
+        name="source"
+        value="Conduit Landing Page"
+      />
+
+      <p class="waitlist-privacy">
+        Your email will only be used for Conduit beta access
+        and product updates.
+      </p>
+
+      <p
+        class="form-status"
+        id="waitlist-status"
+        role="status"
+        aria-live="polite"
+      ></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>
+    © 2026 Conduit
   </p>
 
   <a
@@ -307,6 +483,13 @@
     href="./privacy.html"
   >
     Privacy Policy
+  </a>
+
+  <a
+    class="footer-contact-link"
+    href="mailto:siddharthmahajan@arksoft.xyz"
+  >
+    Contact
   </a>
 </footer>
   </div>
