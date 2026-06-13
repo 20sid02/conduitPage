@@ -44,6 +44,15 @@
   name="twitter:image:alt"
   content="Conduit iOS infrastructure vault app preview"
 />
+<script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js";t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);
+
+// Initialize your tracking instance
+rdt('init', 'a2_j67cqdi98kjr');
+
+// Records that a user loaded your landing page
+rdt('track', 'PageVisit');
+</script>
 </head>
 <body>
   <div class="page-shell">
@@ -65,11 +74,13 @@
     <a href="#features">Features</a>
     <a href="#security">Security</a>
     <a href="#free">Free</a>
+    <a href="#plus">Plus</a>
   </nav>
 
   <a
     class="nav-cta"
     href="https://testflight.apple.com/join/v4uhd6qQ"
+    id="testflight-download-btn"
   >
     Join the TestFlight Beta
   </a>
@@ -96,6 +107,7 @@
       <a
         class="primary-button"
         href="https://testflight.apple.com/join/v4uhd6qQ"
+        id="testflight-download-btn"
       >
         Join the TestFlight Beta
       </a>
@@ -387,6 +399,102 @@
     </div>
   </section>
 
+  <section class="plus-section-wrap" id="plus">
+    <div class="section-heading">
+      <div class="plus-header-row">
+        <p class="eyebrow plus-eyebrow">Conduit Plus</p>
+        <span class="coming-soon-badge">Coming Soon</span>
+      </div>
+
+      <h2>
+        Unlock the full toolkit.
+      </h2>
+
+      <p>
+        Everything in the free tier, plus unlimited capacity, cross-device sync,
+        live diagnostics, and security tools for developers who manage real workloads.
+      </p>
+    </div>
+
+    <div class="early-tester-banner">
+      <span class="early-tester-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+      </span>
+      <div>
+        <strong>Free for early testers — no catch.</strong>
+        <p>Join the TestFlight beta now and receive Conduit Plus free for 1 full year when it launches.</p>
+      </div>
+    </div>
+
+    <div class="plus-grid">
+      <div class="plus-feature">
+        <span class="plus-dot"></span>
+        <div class="plus-feature-text">
+          <strong>Unlimited Clients</strong>
+          <p>Remove the 3-client free tier cap and manage as many client systems as you need.</p>
+        </div>
+      </div>
+
+      <div class="plus-feature">
+        <span class="plus-dot"></span>
+        <div class="plus-feature-text">
+          <strong>Unlimited Deployments</strong>
+          <p>Remove the 5-deployment cap — track every app, environment, and service per client.</p>
+        </div>
+      </div>
+
+      <div class="plus-feature">
+        <span class="plus-dot"></span>
+        <div class="plus-feature-text">
+          <strong>iCloud Sync</strong>
+          <p>SwiftData &rarr; CloudKit cross-device sync keeps your vault consistent across all your Apple devices.</p>
+        </div>
+      </div>
+
+      <div class="plus-feature">
+        <span class="plus-dot"></span>
+        <div class="plus-feature-text">
+          <strong>API Key Vault</strong>
+          <p>Biometric-locked keychain credential storage for API keys and sensitive tokens.</p>
+        </div>
+      </div>
+
+      <div class="plus-feature">
+        <span class="plus-dot"></span>
+        <div class="plus-feature-text">
+          <strong>Port &amp; Ping Diagnostics</strong>
+          <p>NWConnection-based port checker and ping tool to verify connectivity without leaving the app.</p>
+        </div>
+      </div>
+
+      <div class="plus-feature">
+        <span class="plus-dot"></span>
+        <div class="plus-feature-text">
+          <strong>Port Conflict Scanner</strong>
+          <p>Detects duplicate ports across all your deployments so conflicts surface before they cause problems.</p>
+        </div>
+      </div>
+
+      <div class="plus-feature">
+        <span class="plus-dot"></span>
+        <div class="plus-feature-text">
+          <strong>Server Status Monitor</strong>
+          <p>Live online/offline polling with push alerts so you know when a server goes down.</p>
+        </div>
+      </div>
+
+      <div class="plus-feature">
+        <span class="plus-dot"></span>
+        <div class="plus-feature-text">
+          <strong>Themes &amp; App Icons</strong>
+          <p>Terminal-inspired accent themes and alternate app icons to match your setup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section
     class="final-cta"
     id="waitlist"
@@ -399,10 +507,6 @@
       <h2>
         Now released for TestFlight beta access
       </h2>
-
-      <p>
-        Early testers receive 1 year <b>Conduit Plus</b> version for absolutely free. No commitments.
-      </p>
     </div>
 
     <!-- <form
@@ -472,6 +576,7 @@
     <a
         class="primary-button"
         href="https://testflight.apple.com/join/v4uhd6qQ"
+        id="testflight-download-btn"
       >
         Join the TestFlight Beta
       </a>
