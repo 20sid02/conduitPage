@@ -64,9 +64,8 @@ if (waitlistForm && waitlistStatus) {
   });
 }
 
-// Tracks when a developer actually commits to clicking your TestFlight download link
-const testFlightButton = document.getElementById('testflight-download-btn');
-
-testFlightButton.addEventListener('click', () => {
-    rdt('track', 'Lead'); // Tells the Reddit Ad dashboard you generated a high-value lead!
+document.querySelectorAll('[id="appstore-download-btn"]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+        rdt('track', 'Lead');
+    });
 });
