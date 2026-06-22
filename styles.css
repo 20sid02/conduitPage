@@ -533,6 +533,20 @@ h3 {
   margin: 0 auto 28px;
 }
 
+.footer-badges {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0 4px;
+}
+
+.footer-badges img {
+  display: block;
+  border: 0;
+  height: 48px;
+  width: auto;
+  max-width: 100%;
+}
+
 .site-footer {
   justify-content: center;
   padding: 26px 0 44px;
